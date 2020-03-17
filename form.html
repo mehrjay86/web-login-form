@@ -1,0 +1,145 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>form</title>
+    <link rel="stylesheet" href="./for.css" />
+    </head>
+
+    <div class="head-img">
+      <img src="./images/bootstrap-solid.svg" alt="image"/>
+    </div>
+
+    <h2 class="check">Checkout form</h2>
+ <p class="para">
+  Below is an example form built entirely with Bootstrap's form controls. Each required form group has a <br/>validation state that can be triggered by attempting to submit the form without completing it.
+  </p>
+  <body>
+    <span>
+      <h3>Your Cart</h3>
+      </span>
+    
+  <div class="sidebar">
+    <ul>
+      <li>Product Name 12$<br/> Brief Description</li>
+    <hr />
+        <li>Second Product 8$<br /> Brief Description</li>
+  <hr/>
+      <li>Third Item<br/> Brief Description</li><hr/>
+      <li>Promo Code<br/>ExampleCode </li>
+<hr/>
+      <li>PromoCode $5<br/>ExampleCode</li>
+    
+      <div class="search" >
+      <input type="text" id="ser"  placeholder="Promo code here" >
+      <button>Reedem</button>
+      </ul>
+  </div>
+</div>
+
+  <div id="form">
+    <h2>Billing Address</h2>
+    <div class="page">
+  <form method="POST" action="_top">
+ 
+    <label for="fname">First name</label></br>
+      <input type="text" id="fname" name="fname" placeholder="Type your First name" required>
+        
+  
+      <label for="lname">Last name:</label>
+      <input type="text" id="lname" name="lname">
+    
+  </br>
+            <label for="uname">User name:</label><br>
+      <input type="text" id="uname"  name="uname" ><br/>
+      
+        <label for="email">Email(Optional)</label><br/>
+        <input type="email" size="50" name="text" placeholder="you@example.com"><br>
+        
+        <label for="address">Address</label> </br>
+        <input  type="text" size="50" palceholder="1234" required=""><br>
+        
+        <label for="address2">Address2</label> </br>
+        <input type="text" size="50" palceholder="1234" required=""><br>
+
+
+    <div class="z">
+        <label for="country">Country</label><br/>
+        <select id="country" required="">
+          <option value="">Choose...</option>
+          <option>United States</option>
+        </select>
+
+        <label for="state">State</label>
+        <select id="state" required="">
+          <option value="">Choose...</option>
+          <option>California</option>
+        </select>
+
+        
+          <label for="zip">Zip</label>
+        <input type="text" id="zip" maxlength="6" size="10">
+      </div>
+
+
+      <hr class="line">
+      <div class="checkbox">
+        <input type="checkbox">
+          <label for="same-address">Shipping address is the same as my billing address</label></br>
+      
+            <input type="checkbox">
+            <label for="save-info"> Save this information for next time</label>
+          </div>
+
+          <div class="radio">
+          <h4>Payment</h4>
+          
+            <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked="" required="">
+            <label for="credit">Credit Card</label><br>
+          
+            <input id="Debit" name="paymentMethod" type="radio" checked="" required="">
+            <label for="debit">Debit card</label><br>
+  
+            <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" checked="" required="">
+            <label for="credit">Paypal</label>
+          </div>
+
+        
+          <label for ="card" type="text">Name on Card</label><br/>
+            <input type="text"  placeholder="" size="10" required="">
+          
+          <label for="cc-number">Credit card number</label>
+          <input type="text" placeholder="" size="14" required="">
+
+          <div>
+          <label for="expiration">Expiration</label><br/>
+          <input type="text" placeholder="" size="5" require="">
+
+          <label for="cc-expiration">CVV</label>
+          <input type="text" placeholder="" size="7" required="">
+            </div>
+      </div>
+      <hr />
+    </div>
+  
+    <input type="submit" name="S" value="Continue To checkout">
+ 
+          </form>
+          </div>
+
+             <div>        
+      <footer>
+       <p>© Copyright 2017-2018 Company Name</p>
+        <footer>
+      <ul>
+      <li><a href="#">Privacy</a></li>
+       <li><a href="#">Terms</a></li>
+        <li><a href="#">Support<a></li>
+      </ul>
+    </footer>
+  <div>
+  
+
+  </body>
+</html>
