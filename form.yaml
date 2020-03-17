@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: webform
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: web-form
+  template:
+    metadata:
+      labels: 
+        app: web-form
+        environment: dev
+    spec:
+       containers:
+        - name: form
+          image: mehrjay86/form
+          ports:
+            - containerPort: 8080
